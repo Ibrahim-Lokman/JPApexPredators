@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ApexPredator: Codable {
+struct ApexPredator: Codable, Identifiable {
     let id: Int
     let name: String
     let type: String
@@ -16,6 +16,12 @@ struct ApexPredator: Codable {
     let movies: [String]
     let movieScenes: [MovieScene]
     let link: String
+    
+    var image: String {
+        name
+            .lowercased()
+            .replacingOccurrences(of: " ", with: "")
+    }
     
     struct MovieScene: Codable {
         let id: Int
