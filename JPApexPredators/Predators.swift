@@ -14,6 +14,7 @@ class Predators {
         decodeApexPredatorData()
     }
     
+    
     func decodeApexPredatorData(){
         if let url = Bundle.main.url(forResource: "jpapepredators", withExtension: "json"){
             do{
