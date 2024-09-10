@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct ApexPredator: Codable, Identifiable {
     let id: Int
     let name: String
-    let type: String
+    let type: PredatorType
     let latitude: Double
     let longitude: Double
     let movies: [String]
@@ -27,5 +28,22 @@ struct ApexPredator: Codable, Identifiable {
         let id: Int
         let movie: String
         let sceneDescription: String
+    }
+    
+    enum PredatorType: String, Codable {
+        case land
+        case air
+        case sea
+        
+        var background: Color {
+            switch self {
+            case .land:
+                    .brown
+            case .air:
+                    .teal
+            case .sea:
+                    .blue
+            }
+        }
     }
 }

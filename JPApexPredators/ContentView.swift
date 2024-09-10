@@ -20,7 +20,14 @@ struct ContentView: View {
                     .shadow(color: .white, radius: 1)
                 VStack(alignment:.leading) {
                     Text(predator.name)
-                    Text(predator.type.capitalized)
+                        .fontWeight(.bold)
+                    Text(predator.type.rawValue.capitalized)
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .padding(.horizontal,13)
+                        .padding(.vertical, 5)
+                        .background(predator.type.background)
+                        .clipShape(.capsule)
                 }
               
             }
