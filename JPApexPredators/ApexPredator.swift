@@ -30,20 +30,44 @@ struct ApexPredator: Codable, Identifiable {
         let sceneDescription: String
     }
     
-    enum PredatorType: String, Codable {
-        case land
-        case air
-        case sea
-        
-        var background: Color {
-            switch self {
-            case .land:
-                    .brown
-            case .air:
-                    .teal
-            case .sea:
-                    .blue
-            }
+   
+}
+
+enum PredatorType: String, Codable, CaseIterable, Identifiable {
+ 
+    
+    case all
+    case land
+    case air
+    case sea
+    
+    var id: PredatorType {
+        self
+    }
+    
+    var background: Color {
+        switch self {
+        case .land:
+                .brown
+        case .air:
+                .teal
+        case .sea:
+                .blue
+        case .all:
+                .black
         }
     }
+    var icon: String {
+        switch self {
+        case .land:
+                "square.stack.3d.up.fill"
+        case .air:
+                "leaf.fill"
+        case .sea:
+                "wind"
+        case .all:
+                "drop.fill"
+        }
+    }
+    
 }
