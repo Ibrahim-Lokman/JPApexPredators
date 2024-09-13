@@ -15,6 +15,7 @@
 		F81B84182C8F4C5900E61560 /* ApexPredator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B84172C8F4C5900E61560 /* ApexPredator.swift */; };
 		F81B841A2C8F536900E61560 /* Predators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B84192C8F536800E61560 /* Predators.swift */; };
 		F82922462C93EF490063B148 /* PredatorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82922452C93EF490063B148 /* PredatorDetail.swift */; };
+		F82922482C941A6B0063B148 /* PredatorMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82922472C941A6B0063B148 /* PredatorMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		F81B84172C8F4C5900E61560 /* ApexPredator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredator.swift; sourceTree = "<group>"; };
 		F81B84192C8F536800E61560 /* Predators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predators.swift; sourceTree = "<group>"; };
 		F82922452C93EF490063B148 /* PredatorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorDetail.swift; sourceTree = "<group>"; };
+		F82922472C941A6B0063B148 /* PredatorMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				F81B84072C8F431B00E61560 /* JPApexPredatorsApp.swift */,
 				F81B84092C8F431B00E61560 /* ContentView.swift */,
 				F82922452C93EF490063B148 /* PredatorDetail.swift */,
+				F82922472C941A6B0063B148 /* PredatorMap.swift */,
 				F81B840B2C8F431D00E61560 /* Assets.xcassets */,
 				F81B84152C8F43DD00E61560 /* jpapexpredators.json */,
 				F81B84192C8F536800E61560 /* Predators.swift */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F81B84182C8F4C5900E61560 /* ApexPredator.swift in Sources */,
+				F82922482C941A6B0063B148 /* PredatorMap.swift in Sources */,
 				F81B840A2C8F431B00E61560 /* ContentView.swift in Sources */,
 				F82922462C93EF490063B148 /* PredatorDetail.swift in Sources */,
 				F81B841A2C8F536900E61560 /* Predators.swift in Sources */,
