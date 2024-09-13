@@ -24,7 +24,7 @@ struct ApexPredator: Codable, Identifiable {
             .replacingOccurrences(of: " ", with: "")
     }
     
-    struct MovieScene: Codable {
+    struct MovieScene: Codable, Identifiable {
         let id: Int
         let movie: String
         let sceneDescription: String
